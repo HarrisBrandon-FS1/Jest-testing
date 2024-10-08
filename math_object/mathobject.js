@@ -1,31 +1,52 @@
-const add = (int) => {
-    return (2+2);
-}
 
-const subtract = (int) => {
-    return (2-2);
-}
+//addition function
+const add = (a, b) => {
+    return a + b;
+};
 
-const divide = (int) => {
-    return (2/2);
-}
+const sum = add(2, 2);
+console.log("sum", sum);
 
-const multiply = (int) => {
-    return (2*2);
+//subtraction function
+const subtract = (a, b) => {
+    return a - b;
 }
+const difference = subtract(2, 2);
+console.log("difference", difference)
 
-const sqroot = (int) => {
-    return Math.sqrt(9);
+//division Function
+const divide = (a, b) => {
+    return a/b ;
 }
-const max = (int) => {
-    return Math.max(2, 6);
+const quotient = divide(2, 2);
+console.log("quotient", quotient)
+
+//multiplication function
+const multiply = (a, b) => {
+    return a * b;
 }
+const product = multiply(2, 2);
+console.log("Product", product)
+
+//Square Root Function
+const squareRoot = (a) => {
+    return Math.sqrt(a);
+}
+const root = squareRoot(9);
+console.log("Square Root", root)
+
+//Max of two numbers Function
+const max = (a, b) => {
+    return Math.max(a, b);
+}
+const maximum = max(2, 6);
+console.log("Maximum", maximum)
 
 module.exports = {
     add,
     subtract,
     divide,
     multiply,
-    sqroot,
+    squareRoot,
     max
 }
